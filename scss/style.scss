@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+@import 'nav';
+@import 'hero';
+@import 'grow';
+@import 'flowing';
+@import 'yourusers';
+@import 'readytobuild';
+@import 'footer';
+
+*,
+::before, 
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$pink: hsl(322, 100%, 66%);
+$light-pink : hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+$dark-blue: hsl(192, 100%, 9%);
+$pale-blue: hsl(207, 100%, 98%);
+$font-headings: 'Poppins', sans-serif;
+$font-body : 'Open Sans', sans-serif;
+$secondary-header-size : 28px;
+
+body{
+    background-color: white;
+    font-family: $font-body;
+}
+
+button{
+    outline-width: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.get__started__btn{
+    color: white;
+    background-color: $pink;
+    padding: 20px 60px;
+    border-radius: 40px;
+    font-weight: 600;
+    margin-top: 32px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    box-shadow: 2px 2px 10px 2px rgba(130, 130, 130, .3);
+    transition: background-color 200ms ease-in;
+
+    &:hover{
+        background-color: $light-pink;
+    }
+ 
+}
+
+
+
+@mixin secondary_headers {
+    color: $dark-blue;
+    font-size: 28px;
+    font-family: $font-headings;
+}
+
+@mixin secondary_text {
+    font-size: 14px;
+    line-height: 1.54;
+    max-width: calc(min(400px, 100%));
+}

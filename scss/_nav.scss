@@ -1,0 +1,37 @@
+
+$pink: hsl(322, 100%, 66%);
+$light-pink : hsl(321, 100%, 78%);
+$light-red: hsl(0, 100%, 63%);
+$dark-blue: hsl(192, 100%, 9%);
+$pale-blue: hsl(207, 100%, 98%);
+$font-headings: 'Poppins', sans-serif;
+$font-body : 'Open Sans', sans-serif;
+
+
+nav{
+    height: 6rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+    img{
+        height: 26px;
+    }
+}
+
+
+.try_free{
+    color: $pink;
+    border-radius: 20px;
+    padding: 6px 18px;
+    background-color: white;
+    border: 1px solid $pink;
+    transition: all 100ms ease-in;
+
+    &:hover{
+        border: 1px solid $light-pink;
+        color: $light-pink;
+    }
+}

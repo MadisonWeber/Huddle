@@ -1,0 +1,21 @@
+.ready_to_build{
+
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+    .ready_to_build_container{
+        text-align: center;
+
+        h2{
+      
+            font-family: $font-headings;
+            color: $dark-blue;
+            text-transform: capitalize;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+    }
+}
